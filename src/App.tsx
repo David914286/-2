@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Instagram, ArrowRight, Mic, Radio, Users, Star, Calendar, FileText } from 'lucide-react';
+import { Instagram, Facebook, ArrowRight, Mic, Radio, Users, Star, Calendar, FileText } from 'lucide-react';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -199,13 +199,13 @@ export default function App() {
           </h1>
           
           <p className="text-xl md:text-2xl font-serif text-slate-600 max-w-md text-balance mb-10 fade-up">
-            金鐘級主持發聲人
+            梅格-金鐘級主持發聲人
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 fade-up w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row gap-4 fade-up w-full sm:w-auto flex-wrap">
             <MagneticButton 
+              href="mailto:megwang4422@gmail.com"
               className="px-8 py-4 bg-rose-600 text-white rounded-full font-medium tracking-wide shadow-lg shadow-rose-600/20 hover:bg-rose-700 hover:shadow-rose-600/40 transition-all"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               立即預約 <ArrowRight className="w-5 h-5" />
             </MagneticButton>
@@ -220,6 +220,12 @@ export default function App() {
               className="px-8 py-4 bg-white border border-slate-200 text-slate-700 rounded-full font-medium tracking-wide shadow-sm hover:bg-slate-50 transition-colors"
             >
               追蹤 IG <Instagram className="w-5 h-5" />
+            </MagneticButton>
+            <MagneticButton 
+              href="https://www.facebook.com/share/1KLAvTrG3Q/?mibextid=wwXIfr"
+              className="px-8 py-4 bg-white border border-slate-200 text-slate-700 rounded-full font-medium tracking-wide shadow-sm hover:bg-slate-50 transition-colors"
+            >
+              追蹤 FB <Facebook className="w-5 h-5" />
             </MagneticButton>
           </div>
         </div>
@@ -421,10 +427,10 @@ export default function App() {
             無論是品牌發表、萬人演唱會或是高端婚禮，讓專業的聲音為您的活動注入靈魂。
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center relative z-10">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center relative z-10 flex-wrap">
             <MagneticButton 
+              href="mailto:megwang4422@gmail.com"
               className="px-10 py-5 bg-slate-900 text-white rounded-full font-medium tracking-wide shadow-xl shadow-slate-900/20 hover:bg-slate-800 transition-colors w-full sm:w-auto"
-              onClick={() => window.location.href = 'mailto:djmegmeg@gmail.com'}
             >
               立即預約 <Calendar className="w-5 h-5" />
             </MagneticButton>
@@ -434,6 +440,12 @@ export default function App() {
             >
               追蹤 IG <Instagram className="w-5 h-5" />
             </MagneticButton>
+            <MagneticButton 
+              href="https://www.facebook.com/share/1KLAvTrG3Q/?mibextid=wwXIfr"
+              className="px-10 py-5 bg-white border border-slate-200 text-slate-700 rounded-full font-medium tracking-wide shadow-sm hover:bg-slate-50 transition-colors w-full sm:w-auto"
+            >
+              追蹤 FB <Facebook className="w-5 h-5" />
+            </MagneticButton>
           </div>
         </div>
       </section>
@@ -442,7 +454,7 @@ export default function App() {
       <footer className="py-12 px-6 md:px-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-mono text-slate-500 uppercase tracking-widest relative z-10 max-w-7xl mx-auto">
         <div>© {new Date().getFullYear()} I'm Meg. All rights reserved.</div>
         <div className="flex gap-8">
-          <a href="https://www.facebook.com/djmegmeg" target="_blank" rel="noopener noreferrer" className="hover:text-rose-600 transition-colors interactive">Facebook</a>
+          <a href="https://www.facebook.com/share/1KLAvTrG3Q/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-rose-600 transition-colors interactive">Facebook</a>
           <a href="https://podcasts.apple.com/tw/podcast/梅格的地下電台/id1615219484" target="_blank" rel="noopener noreferrer" className="hover:text-rose-600 transition-colors interactive">Podcast</a>
         </div>
       </footer>
