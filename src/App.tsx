@@ -309,10 +309,7 @@ export default function App() {
             <h2 className="text-3xl md:text-5xl font-serif mb-4 text-slate-900">現場魅力</h2>
             <p className="text-slate-500 font-mono text-sm uppercase tracking-widest">Live Experience</p>
           </div>
-          <MagneticButton 
-            href="https://drive.google.com/file/d/1L34H6duFqHimXu7xQhqnRMHX395LETKP/view?usp=sharing"
-            className="text-rose-600 font-medium text-sm flex items-center gap-2 hover:text-rose-700"
-          >
+          <MagneticButton className="text-rose-600 font-medium text-sm flex items-center gap-2 hover:text-rose-700">
             查看更多經歷 <ArrowRight className="w-4 h-4" />
           </MagneticButton>
         </div>
